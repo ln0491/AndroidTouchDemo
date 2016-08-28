@@ -261,7 +261,7 @@ Acitivty的onTouchEvent
 
 如果 onInterceptTouchEvent 返回 true，则表示将事件进行拦截，并将拦截到的事件交由当前 View 的 onTouchEvent 进行处理；
 如果 onInterceptTouchEvent 返回 false，则表示将事件放行，当前 View 上的事件会被传递到子 View 上，再由子 View 的 dispatchTouchEvent 来开始这个事件的分发；
-如果 onInterceptTouchEvent 返回 super.onInterceptTouchEvent(ev)，，
+如果 onInterceptTouchEvent 返回 super.onInterceptTouchEvent(ev)，事件默认会被拦截，
 如果有子View将事件传给子View由子View的dispatchTouchEvent来处理
 如果没有子View并将拦截到的事件交由当前 View 的 onTouchEvent 进行处理。
 
